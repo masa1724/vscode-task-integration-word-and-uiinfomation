@@ -1,0 +1,27 @@
+{
+    "name": "simple-extension",
+    "displayName": "Simple Extension",
+    "description": "A simple VS Code extension with only one JavaScript file.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "simple-extension.helloWorld",
+                "title": "Hello World"
+            }
+        ]
+    },
+    "activationEvents": [
+        "onCommand:simple-extension.helloWorld"
+    ],
+    "devDependencies": {
+        "@types/vscode": "^1.75.0"
+    }
+}
